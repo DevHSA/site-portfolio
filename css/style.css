@@ -5,3 +5,126 @@
   font-family: "PT Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 100px 0 100px;
+}
+
+nav ul,
+.main-info-section,
+.work-category {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.navbar {
+  background-color: #181818;
+}
+
+header h1,
+header a,
+.text p,
+.about h1,
+.skills h1,
+.work h1,
+.contact h1 {
+    color: #707070
+}
+
+li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+a {
+
+  text-decoration: none;
+  font-size: .9rem;
+  text-transform: uppercase;
+  position: relative;
+  top:50%;
+  bottom:50%;
+  transform: translateY(-50%);
+
+}
+
+.main-info-section{
+  height: calc(100vh - 81.6px);
+}
+
+.text {
+  margin-top: 120px;
+}
+
+.text h1 {
+  color: white;
+  font-size: 3rem;
+  cursor: context-menu;
+}
+
+.text span {
+  display: inline-block;
+}
+
+span:hover {
+
+  color: #48cfad;
+  transition: all .5s;
+
+}
+
+span.name {
+  color: #ED5565;
+}
+
+span.m-left {
+  margin-left: -10px;
+}
+
+.text p {
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: .8rem;
+}
+
+.text a{
+
+  padding: 12px 25px;
+  background-color: none;
+  border: 3px solid #ED5565;
+  color: #ED5565;
+  font-size: .8rem;
+  letter-spacing: 2px;
+  position: relative;
+  top:80px;
+  overflow: hidden;
+  transition: all .5s;
+  display: inline-block;
+}
+
+.text a:hover{
+  color: white;
+}
+
+.text a::before {
+  content: '';
+  background-color: #ED5565;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: .5s;
+}
+
+.text a:hover::before{
+
+  height:100%;
+}
