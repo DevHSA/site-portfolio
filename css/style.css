@@ -16,11 +16,24 @@ html {
 nav ul,
 .main-info-section,
 .work-category {
-
+  border: 1px solid;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
+}
+
+body  {
+  background-color: #252627;
+}
+
+header {
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0px;
+  
 }
 
 .navbar {
@@ -87,7 +100,7 @@ span.m-left {
   margin-left: -10px;
 }
 
-.text p {
+.text p{
   letter-spacing: 3px;
   word-spacing: 10px;
   font-size: .8rem;
@@ -97,7 +110,7 @@ span.m-left {
 
   padding: 12px 25px;
   background-color: none;
-  border: 3px solid #ED5565;
+  border: 3px solid #ED5565;  
   color: #ED5565;
   font-size: .8rem;
   letter-spacing: 2px;
@@ -125,6 +138,61 @@ span.m-left {
 }
 
 .text a:hover::before{
-
   height:100%;
+}
+
+.profile-image img{
+  width: 450px;
+  margin-top: 50px; 
+}
+
+.about {
+  height:100vh;
+  margin-top: 100px;
+  border: 1px solid;
+}
+
+.about h1,
+.work h1 {
+
+  font-size: 10rem;
+  z-index: 0;
+  opacity: .1;
+
+}
+
+.about-me-info {
+
+  max-width: 900px;
+  background-color: #252627;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, .25);
+  padding: 50px;
+  position: relative;
+  top: -70px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  
+}
+
+a.about-me-info p{
+  font-size: 3.3rem;
+  color:#BEBEBE; 
+}
+
+.about-me-info p:nth-child(2),
+.about-me-info p:last-child {
+  margin-top: 30px;
+}
+
+.about img {
+
+  width:300px;
+  position: relative;
+  top: -300px;
+  left: calc(100% - 100px);
+  right: calc(100% - 100px);
+  transform: translateX(calc(-100% + 100px));
+
 }
