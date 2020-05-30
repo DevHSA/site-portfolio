@@ -81,6 +81,8 @@ a {
   cursor: context-menu;
 }
 
+
+
 .text span {
   display: inline-block;
 }
@@ -176,8 +178,8 @@ span.m-left {
   
 }
 
-a.about-me-info p{
-  font-size: 3.3rem;
+.about-me-info p{
+  font-size: 1.3rem;
   color:#BEBEBE; 
 }
 
@@ -195,4 +197,184 @@ a.about-me-info p{
   right: calc(100% - 100px);
   transform: translateX(calc(-100% + 100px));
 
+}
+
+.skills {
+  height: 100vh;
+}
+
+.skills h1,
+.contact h1 {
+  text-align: right;
+  font-size: 10rem;
+  opacity: .1;
+}
+
+.skills-info {
+
+  position: relative;
+  font-size: 1.4rem;
+  color: #BEBEBE;
+  max-width: 800px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.html{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+
+}
+
+div [class^='tag-'] {
+
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+  background-color: #1785A7;
+  width: 120px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+div [class^='tag-'] p{
+
+    color: #fff;
+    text-align:left;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+}
+
+.progressbar{
+  position: relative;
+  width: 600px;
+  height: 20px;
+  border: 2px solid #48CFAD;
+  border-radius: 20px;
+  margin-top: 7px;
+}
+
+div [class^="bar-"] {
+  position: absolute;
+  background-color: #48CFAD;
+  height: 10px;
+  border-radius: 20px;
+  margin: 2.7px;
+}
+
+.bar-html,
+.bar-css,
+.bar-javascript,
+.bar-react {
+  width: calc(0 - 6px);
+}
+
+.work-category button {
+  text-transform: capitalize;
+  border: 3px solid #ED5565;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: #ED5565;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  background-color: #252627;
+  outline: none;
+  cursor: pointer;
+}
+
+div[class^='category-'] {
+
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  grid-gap: 20px;
+}
+
+.work a{
+  justify-self: center;
+  position: relative;
+  display: inline-block;
+}
+
+.work-category .active {
+  background-color: #ED5565;
+}
+
+button.active {
+  color: #fff;
+}
+
+.work a img{
+  width: 350px;
+  justify-self: center;
+}
+
+div.hideCategory {
+  display:none;
+}
+
+.showCategory {
+  display: block;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+
+div.hideCategory {
+  display:none;
+}
+
+.showCategory {
+  display: block;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+form input,
+form textarea{
+
+  display: block;
+  width: 500px;
+  padding: 20px;
+  background-color: #252627;
+  border: 3px solid #707070;
+  margin: 20px 0;
+  outline: none;
+  font-size: 1.2rem;
+  color: #fff;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+
+}
+
+form input:last-child {
+
+  width: 150px;
+  background-color: #ED5565;
+  border: none;
+  cursor: pointer;
+
+}
+
+footer hr {
+  border: 2px solid #707070;
+  margin-top: 80px;
+}
+
+footer p{
+  text-align: center;
+  color: #707070;
+  font-size: 1.2rem;
+  padding: 30px;
 }
