@@ -32,10 +32,10 @@ const scene = new ScrollMagic.Scene({
 }).setTween(t1).addTo(controller)
 
 
-const showRequiredCategory = event => {
+function showRequiredCategory(event) {
 
     const getId = event.id
-    const link = document.querySelectorAll('.work-category button')
+    const links = document.querySelectorAll('.work-category button')
     for(i=0; i<links.length; i++){
         if(links[i].hasAttribute('class')){
             links[i].classList.remove('active')
@@ -43,7 +43,7 @@ const showRequiredCategory = event => {
     }
 
     event.classList.add('active')
-    const getCategory = document.querySelector('.category-${getId}')
+    const getCategory = document.querySelector(`.category-${getId}`)
     const categories = document.querySelectorAll('div[class^= "category-"]')
 
     for(i=0;i<categories.length; i++) {
