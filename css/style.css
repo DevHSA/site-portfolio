@@ -16,7 +16,7 @@ html {
 nav ul,
 .main-info-section,
 .work-category {
-  border: 1px solid;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -151,7 +151,6 @@ span.m-left {
 .about {
   height:100vh;
   margin-top: 100px;
-  border: 1px solid;
 }
 
 .about h1,
